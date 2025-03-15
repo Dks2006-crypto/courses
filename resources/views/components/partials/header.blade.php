@@ -1,10 +1,9 @@
 <x-container>
-    <header class="flex justify-between items-center bg-white drop-shadow-sm py-4 px-8">
+    <header class=" flex justify-between items-center bg-white drop-shadow-sm py-4 px-8 ">
 
         <a href="{{route("main")}}" class=" flex items-center gap-[25px]">
             <p class="text-lg font-bold ">Courses</p>
         </a>
-
         <!-- Mobile Menu Toggle -->
         <button class="flex md:hidden flex-col items-center align-middle" @click="openMenu = !openMenu"
             :aria-expanded="openMenu" aria-controls="mobile-navigation" aria-label="Navigation Menu">
@@ -35,11 +34,11 @@
     </header>
 
     <!-- Pop Out Navigation -->
-    <nav id="mobile-navigation" class="fixed top-0 right-0 bottom-0 left-0 backdrop-blur-sm z-10"
+    <nav id="mobile-navigation" class="fixed top-0 right-0 bottom-0 left-0 backdrop-blur-sm z-999"
         :class="openMenu ? 'visible' : 'invisible' " x-cloak>
 
         <!-- UL Links -->
-        <ul class="absolute top-0 right-0 bottom-0 w-10/12 py-4 bg-white drop-shadow-2xl z-10 transition-all"
+        <ul class="absolute top-0 right-0 bottom-0 w-10/12 py-4 bg-white drop-shadow-2xl z-999 transition-all"
             :class="openMenu ? 'translate-x-0' : 'translate-x-full'">
 
             <li class="border-b border-inherit">
