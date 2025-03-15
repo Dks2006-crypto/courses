@@ -1,4 +1,4 @@
-<section class="mt-6">
+<section class="mt-6 pb-20">
     <x-container>
         <div class=" bg-gray-200 rounded-3xl py-6 px-4">
             <div class="grid lg:grid-cols-2 grid-cols-1 gap-4">
