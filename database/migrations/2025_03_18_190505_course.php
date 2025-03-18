@@ -15,9 +15,9 @@ return new class extends Migration
         {
             $table->id();
             $table->string('name');
-            $table->text ('description');
-            $table->numder('price');
-            $table->number('time');
+            $table->text('description');
+            $table->text('price');
+            $table->text('time');
             $table->boolean('is_promo');
             $table->boolean('is_new');
             $table->boolean('is_popular');
